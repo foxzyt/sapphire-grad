@@ -1,0 +1,14 @@
+# Changelog for sapphire-grad v1.0.1
+
+## [1.0.1] - 2026-07-15
+
+### Added
+- Added dependency on infinitum v1.0.0 for numerical operations
+- Added `normalize_gradients_infinitum()` function that uses infinitum library for gradient normalization
+  - Uses infinitum's `sqrt()`, `sum()`, `mul()`, and `mul_scalar()` functions
+  - Normalizes gradient vectors to unit length for stable training
+  - Handles edge cases where gradient norm is near zero
+
+### Changed
+- Updated main.sp to import infinitum library
+- Enhanced gradient processing capabilities with infinitum integration

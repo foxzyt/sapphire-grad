@@ -1,0 +1,4 @@
+name: sapphire-grad
+author: Bernardo Alvim
+version: 
+description: An AI training library made with Sapphire.
